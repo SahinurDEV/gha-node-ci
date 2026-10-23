@@ -9,6 +9,14 @@
     "lint": "eslint .",
     "build": "node scripts/build.js"
   },
-  "dependencies": { "express": "^5.1.0" },
-  "devDependencies": { "@eslint/js": "^9.30.0", "eslint": "^9.30.0", "globals": "^16.3.0", "supertest": "^7.1.0", "vitest": "^3.2.0" }
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "supertest": "^7.3.1",
+    "vitest": "^5.0.5"
+  }
 }
