@@ -1,0 +1,12 @@
+name: Shared CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  node:
+    uses: SahinurDEV/gha-shared-workflows/.github/workflows/node-ci.yml@main
+    with:
+      node-version: "24"
+    secrets: inherit
