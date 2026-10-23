@@ -34,3 +34,12 @@ jobs:
         run: npm test
       - name: Build
         run: npm run build
+
+  # One stable check name to require in the ruleset, however the matrix changes.
+  ci-ok:
+    if: always()
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: All matrix jobs passed
+        run: test "${{ needs.test.result }}" = "success"
